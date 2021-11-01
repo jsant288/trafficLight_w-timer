@@ -20,31 +20,35 @@ const Traffic = () => {
 	});
 
 	return (
-		<div className="lamp text-center mt-5 ">
-			<div className="col-2 mx-auto p-2 bg-dark rounded-pill ">
-				<div className="p-2">
-					{light === "red" ? (
-						<div className="lights redShadow mx-auto my-2 rounded-circle bg-danger"></div>
-					) : (
-						<div className="lights blackShadow mx-auto my-2 rounded-circle bg-dark"></div>
-					)}
-				</div>
-				<div className="p-2">
-					{light === "yellow" ? (
-						<div className="lights yellowShadow mx-auto my-2 rounded-circle bg-warning"></div>
-					) : (
-						<div className="lights blackShadow mx-auto my-2 rounded-circle bg-dark"></div>
-					)}
-				</div>
-				<div className="p-2">
-					{light === "green" ? (
-						<div className="lights greenShadow mx-auto my-2 rounded-circle bg-success"></div>
-					) : (
-						<div className="lights blackShadow mx-auto my-2 rounded-circle bg-dark"></div>
-					)}
+		<>
+			<div className="pole mx-auto bg-dark"></div>
+
+			<div className="lamp text-center">
+				<div className="col-2 mx-auto p-2 bg-dark rounded-pill ">
+					<div className="p-2">
+						{light === "red" ? (
+							<div className="lights redShadow mx-auto my-2 rounded-circle bg-danger"></div>
+						) : (
+							<div className="lights blackShadow mx-auto my-2 rounded-circle bg-dark"></div>
+						)}
+					</div>
+					<div className="p-2">
+						{light === "yellow" ? (
+							<div className="lights yellowShadow mx-auto my-2 rounded-circle bg-warning"></div>
+						) : (
+							<div className="lights blackShadow mx-auto my-2 rounded-circle bg-dark"></div>
+						)}
+					</div>
+					<div className="p-2">
+						{light === "green" ? (
+							<div className="lights greenShadow mx-auto my-2 rounded-circle bg-success"></div>
+						) : (
+							<div className="lights blackShadow mx-auto my-2 rounded-circle bg-dark"></div>
+						)}
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
