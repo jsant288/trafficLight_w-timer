@@ -14,5 +14,17 @@
 .lights{
     height: 150px;
     width: 150px;
-  
+
+}
+.redShadow{
+box-shadow: 0px 0px 40px 10px red;
+}
+.greenShadow{
+box-shadow: 0px 0px 40px 10px green;
+}
+.yellowShadow{
+box-shadow: 0px 0px 40px 10px yellow;
+}
+.blackShadow {
+    box-shadow: 0px 0px 40px 5px black;
 }
